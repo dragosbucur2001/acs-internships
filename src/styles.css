@@ -2,4 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+html body {
+  font-family: "Titillium Web", sans-serif;
+}
 
+html body h1 {
+  font-family: "Khand", sans-serif;
+}
+
+.max-w-responsive {
+  @apply px-4 md:px-0 md:w-10/12 grow;
+}
+
+.card {
+  @apply flex items-center p-3 gap-2;
+  @apply bg-white rounded-lg border-gray-100 shadow-lg;
+}
+
+.divider {
+  @apply w-2 bg-[#1f9495] h-full;
+}
+
+.card-text {
+  @apply flex flex-col gap-2 grow mb-auto;
+}
+
+.card-title {
+  @apply text-2xl font-bold text-gray-800;
+}
