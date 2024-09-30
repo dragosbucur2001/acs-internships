@@ -20,7 +20,7 @@ html body h1 {
 }
 
 .divider {
-  @apply w-2 bg-[#1f9495] h-full;
+  @apply w-2 bg-[#1f9495] h-full rounded-lg;
 }
 
 .card-text {
