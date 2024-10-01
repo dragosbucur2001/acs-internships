@@ -6,17 +6,23 @@ html body {
   font-family: "Titillium Web", sans-serif;
 }
 
-html body h1 {
+html body h1,
+html body h2 {
   font-family: "Khand", sans-serif;
+  @apply font-bold;
 }
 
 .max-w-responsive {
-  @apply px-4 md:px-0 md:w-10/12 grow;
+  @apply px-4 md:px-0 md:w-10/12 grow mx-auto;
 }
 
 .card {
-  @apply flex items-center p-3 gap-2;
-  @apply bg-white rounded-lg border-gray-100 shadow-lg;
+  @apply flex max-md:flex-col items-center p-3 gap-2;
+  @apply bg-white rounded-lg border border-gray-200 shadow-lg;
+}
+
+.card-icon {
+  @apply text-7xl md:text-6xl;
 }
 
 .divider {
@@ -28,5 +34,30 @@ html body h1 {
 }
 
 .card-title {
-  @apply text-2xl font-bold text-gray-800;
+  @apply text-xl md:text-2xl font-bold text-gray-800;
+  /* font-family: "Khand", sans-serif; */
+}
+
+.nav-item {
+  @apply hover:bg-[#a9e7e8] hover:text-[#0b2a2a] transition-all py-2 px-4 rounded-md;
+}
+
+.section-padding {
+  @apply py-8 md:py-12;
+}
+
+h1 {
+  @apply text-5xl md:text-6xl uppercase max-md:text-center;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl;
+}
+
+.section-text-container {
+  @apply flex md:w-7/12 flex-col gap-4 md:gap-6 max-md:text-center
+}
+
+.section-container {
+  @apply max-w-responsive flex max-md:flex-col items-center justify-between gap-6
 }

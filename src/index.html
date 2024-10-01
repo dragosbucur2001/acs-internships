@@ -16,22 +16,38 @@
 </head>
 
 <body>
-	<div class="w-full fixed top-0 bg-red-100 h-16 shadow-lg z-50">
-		<div class="max-w-responsive mx-auto flex items-center justify-between h-full">
-			<img src="static/logo.webp" alt="Logo ACS Internships" class="size-12 rounded-full">
-		</div>
-	</div>
+	<header class="w-full sticky top-0 bg-white h-16 shadow-lg z-50">
+		<nav class="flex justify-between items-center max-w-responsive mx-auto h-full">
+			<img src="static/logo.webp" alt="Logo ACS Internships" class="w-12">
 
-	<div class="mt-16"></div>
+			<button onclick="onToggleMenu()" id="menu"
+				class="text-3xl cursor-pointer md:hidden peer hover:bg-gray-100 rounded-lg p-2">
+				<svg class="h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+				</svg>
+			</button>
 
-	<div class="py-12 bg-[#166a6b] text-white text-opacity-95">
-		<div class="max-w-responsive mx-auto flex items-center justify-between">
-			<div class="flex flex-col gap-6 w-7/12">
-				<h1 class="text-7xl font-bold">INTERNSHIPURI IN STRAINATATE</h1>
-				<p class="text-xl">
+			<div
+				class="w-full bg-white absolute left-0 top-16 max-md:peer-[.expanded]:block max-md:hidden md:static">
+				<div
+					class="flex md:flex-row md:items-center md:justify-end flex-col justify-around h-full gap-2 max-md:p-4">
+					<a class="nav-item" href="#">Descrierea Evenimentului</a>
+					<a class="nav-item" href="#">Program</a>
+					<a class="nav-item" href="#">Resurse Utile</a>
+				</div>
+			</div>
+	</header>
+
+
+	<div class="section-padding bg-[#166a6b] text-white text-opacity-95">
+		<div class="max-w-responsive flex max-md:flex-col-reverse items-center justify-between gap-6">
+			<div class="section-text-container">
+				<h1 class="section-title md:text-7xl">INTERNSHIPURI IN
+					STRAINATATE</h1>
+				<p class="text-lg">
 					Vin-o sa vezi cum poti sa ajungi si tu la companii de top din afara.
 				</p>
-				<div class="flex gap-4 text-xl">
+				<div class="flex max-md:flex-col max-md:items-center gap-4 text-xl">
 					<div class="flex items-center gap-2">
 						<span class="material-symbols-outlined">event</span>
 						<span>8 Octombrie</span>
@@ -48,31 +64,30 @@
 				</div>
 			</div>
 			<img src="static/logo.webp" alt="Logo ACS Internships"
-				class="w-[300px] rounded-full bg-white border-8 shadow-lg shadow-gray-800">
+				class="w-[300px] rounded-full bg-white border-8 shadow-lg shadow-gray-800 mx-auto">
 		</div>
 	</div>
 
-	<div class="w-full py-12 flex flex-col gap-8">
-		<!-- <h1 class="text-7xl font-bold text-center uppercase">Ce este ACS internshipuri?</h1> -->
-		<div class="flex items-center justify-between mx-auto max-w-responsive">
-			<div class="flex w-7/12 flex-col gap-8">
-				<h1 class="text-6xl font-bold uppercase">Ce este ACS internshipuri?</h1>
-				<p class="text-xl opacity-90 max-w-prose">
+	<div class="section-padding">
+		<div class="section-container">
+			<div class="section-text-container">
+				<h1 class="section-title">Ce este ACS internshipuri?</h1>
+				<p class="text-lg md:text-xl opacity-90 max-w-prose">
 					ACS internshipuri in strainatate este o prezentare anuala organizata
 					de studenti ai automaticii care au plecat in afara
 				</p>
 			</div>
 			<img src="static/multime.jpg" alt="Fosta editie ACS Internships"
-				class="w-4/12 ms-auto rounded-md shadow-xl shadow-gray-500">
+				class="md:w-4/12 w-9/12 mx-auto rounded-md shadow-xl shadow-gray-500">
 		</div>
 	</div>
 
 	<div class="w-full py-12 flex flex-col gap-8 bg-[#1f9495] shadow-lg">
-		<h1 class="text-7xl font-bold text-center uppercase text-white">Ce vei vedea?</h1>
+		<h1 class="text-white text-center">Ce vei vedea?</h1>
 		<div
 			class="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-8 xl:gap-12 w-full max-w-responsive mx-auto">
 			<div class="card">
-				<div class="material-symbols-outlined text-6xl">event</div>
+				<div class="card-icon material-symbols-outlined">event</div>
 				<div class="divider"></div>
 				<div class="card-text">
 					<p class="card-title">1. Cum arata sa iti faci un CV de top</p>
@@ -81,7 +96,7 @@
 				</div>
 			</div>
 			<div class="card">
-				<div class="material-symbols-outlined text-6xl">event</div>
+				<div class="material-symbols-outlined card-icon">event</div>
 				<div class="divider"></div>
 				<div class="card-text">
 					<p class="card-title">2. Cum arata un interviu?</p>
@@ -90,7 +105,7 @@
 				</div>
 			</div>
 			<div class="card">
-				<div class="material-symbols-outlined text-6xl">event</div>
+				<div class="material-symbols-outlined card-icon">event</div>
 				<div class="divider"></div>
 				<div class="card-text">
 					<p class="card-title">2. Cum arata un interviu?</p>
@@ -99,7 +114,7 @@
 				</div>
 			</div>
 			<div class="card">
-				<div class="material-symbols-outlined text-6xl">event</div>
+				<div class="material-symbols-outlined card-icon">event</div>
 				<div class="divider"></div>
 				<div class="card-text">
 					<p class="card-title">2. Cum arata un interviu?</p>
@@ -108,7 +123,7 @@
 				</div>
 			</div>
 			<div class="card">
-				<div class="material-symbols-outlined text-6xl">event</div>
+				<div class="material-symbols-outlined card-icon">event</div>
 				<div class="divider"></div>
 				<div class="card-text">
 					<p class="card-title">2. Cum arata un interviu?</p>
@@ -117,7 +132,7 @@
 				</div>
 			</div>
 			<div class="card">
-				<div class="material-symbols-outlined text-6xl">event</div>
+				<div class="material-symbols-outlined card-icon">event</div>
 				<div class="divider"></div>
 				<div class="card-text">
 					<p class="card-title">2. Cum arata un interviu?</p>
@@ -128,16 +143,16 @@
 		</div>
 	</div>
 
-	<div class="w-full py-12 flex flex-col gap-8">
-		<div class="flex items-center justify-between mx-auto max-w-responsive">
-			<div class="flex w-7/12 flex-col gap-8">
-				<h1 class="text-6xl font-bold uppercase">Ce sa faci mai departe?</h1>
+	<div class="section-padding">
+		<div class="section-container">
+			<div class="section-text-container">
+				<h1 class="section-title">Ce sa faci mai departe?</h1>
 				<p class="text-xl opacity-90 max-w-prose">
 					Am pregatit mai multe resurse pentru tine ...
 				</p>
 			</div>
-			<div class="border-[3px] border-[#166a6b] rounded-lg shadow-xl p-8">
-				<h1 class="text-5xl font-bold">Linkuri Importante</h1>
+			<div class="border-[3px] border-[#166a6b] rounded-lg shadow-xl p-8 mx-auto">
+				<h2 class="text-4xl md:text-5xl">Resurse Utile</h2>
 				<ul class="text-xl mt-4">
 					<li>Drive</li>
 					<li>discord</li>
@@ -147,11 +162,11 @@
 		</div>
 	</div>
 
-	<div class="py-12 bg-[#166a6b] text-white text-opacity-95">
-		<div class="max-w-responsive mx-auto grid gap-3 grid-cols-3">
+	<div class="section-padding bg-[#166a6b] text-white text-opacity-95">
+		<div class="max-w-responsive mx-auto grid gap-6 md:grid-cols-3 text-xl">
 			<div class="flex flex-col gap-2">
-				<h1 class="text-4xl font-bold">Detalii</h1>
-				<div class="flex items-center gap-2 text-xl">
+				<h2>Detalii</h2>
+				<div class="flex items-center gap-2">
 					<span class="material-symbols-outlined">event</span>
 					<span class="">
 						8 Octombrie
@@ -160,26 +175,33 @@
 
 				<div class="flex items-center gap-2">
 					<span class="material-symbols-outlined">location_on</span>
-					<a class="text-lg hover:underline"
-						href="https://maps.app.goo.gl/pcv8AhVMfFF6tAuX8" target="_blank">
+					<a class="hover:underline" href="https://maps.app.goo.gl/pcv8AhVMfFF6tAuX8"
+						target="_blank">
 						Precis, PR001
 					</a>
 				</div>
+				<div class="md:hidden w-full">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.912829386014!2d26.047761599999994!3d44.4349503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201274a6d1f75%3A0x712c060040189cde!2sPRECIS%20-%20Facultatea%20de%20Automatic%C4%83%20%C8%99i%20Calculatoare!5e0!3m2!1sen!2sro!4v1727732264261!5m2!1sen!2sro"
+						height="250" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						class="w-full rounded-lg shadow-lg"></iframe>
+				</div>
 			</div>
-			<div class="flex flex-col gap-2 items-center">
-				<h1 class="text-4xl font-bold">Parteneri</h1>
+
+			<div class="flex flex-col gap-2 md:items-center">
+				<h2>Parteneri</h2>
 				<div class="flex gap-4">
 					<span>ACS</span>
 					<span>LSAC</span>
 				</div>
 			</div>
-			<div class="flex flex-col gap-2 items-end">
-				<h1 class="text-4xl font-bold">Contact</h1>
-				<span>ACS</span>
-				<span>LSAC</span>
+			<div class="flex flex-col gap-2 md:items-end">
+				<h2>Contact</h2>
+				<span>email</span>
+				<span>discord</span>
 			</div>
 
-			<div class="col-span-3 mt-4">
+			<div class="md:col-span-3 mt-4 max-md:hidden">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.912829386014!2d26.047761599999994!3d44.4349503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201274a6d1f75%3A0x712c060040189cde!2sPRECIS%20-%20Facultatea%20de%20Automatic%C4%83%20%C8%99i%20Calculatoare!5e0!3m2!1sen!2sro!4v1727732264261!5m2!1sen!2sro"
 					height="250" style="border:0;" allowfullscreen="" loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"
@@ -188,6 +210,13 @@
 		</div>
 	</div>
 </body>
+
+<script>
+	function onToggleMenu() {
+		const navbar = document.getElementById("menu");
+		navbar.classList.toggle("expanded");
+	}
+</script>
 
 </html>
 
