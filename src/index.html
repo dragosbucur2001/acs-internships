@@ -13,6 +13,15 @@
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link href="./output.css" rel="stylesheet">
+
+	<title>ACS Internships</title>
+	<link rel="icon" type="image/x-icon" href="./static/logo.webp">
+
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="Prezentarea ACS Internships ofera sfaturi de cum poti obtine internshipuri la companii din strainatate.">
+	<meta name="keywords" content="ACS Interships Internshipuri Strainatate In Afara">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -31,9 +40,10 @@
 				class="w-full bg-white absolute left-0 top-16 max-md:peer-[.expanded]:block max-md:hidden md:static">
 				<div
 					class="flex md:flex-row md:items-center md:justify-end flex-col justify-around h-full gap-2 max-md:p-4">
-					<a class="nav-item" href="#">Descrierea Evenimentului</a>
-					<a class="nav-item" href="#">Program</a>
-					<a class="nav-item" href="#">Resurse Utile</a>
+					<a class="nav-item" onclick="onClickMenu()" href="#description">Descrierea
+						Evenimentului</a>
+					<a class="nav-item" onclick="onClickMenu()" href="#schedule">Program</a>
+					<a class="nav-item" onclick="onClickMenu()" href="#resources">Resurse Utile</a>
 				</div>
 			</div>
 	</header>
@@ -42,10 +52,9 @@
 	<div class="section-padding bg-[#166a6b] text-white text-opacity-95">
 		<div class="max-w-responsive flex max-md:flex-col-reverse items-center justify-between gap-6">
 			<div class="section-text-container">
-				<h1 class="section-title md:text-7xl">INTERNSHIPURI IN
-					STRAINATATE</h1>
+				<h1 class="section-title md:text-7xl uppercase">ACS Internships</h1>
 				<p class="text-lg">
-					Vin-o sa vezi cum poti sa ajungi si tu la companii de top din afara.
+					Vino sa vezi cum poti sa obtii si tu un internship in strainatate.
 				</p>
 				<div class="flex max-md:flex-col max-md:items-center gap-4 text-xl">
 					<div class="flex items-center gap-2">
@@ -68,13 +77,23 @@
 		</div>
 	</div>
 
+	<div id="description" class="-translate-y-16"></div>
 	<div class="section-padding">
 		<div class="section-container">
 			<div class="section-text-container">
-				<h1 class="section-title">Ce este ACS internshipuri?</h1>
+				<h1 class="section-title">Ce este ACS Internships?</h1>
 				<p class="text-lg md:text-xl opacity-90 max-w-prose">
-					ACS internshipuri in strainatate este o prezentare anuala organizata
-					de studenti ai automaticii care au obtinut internshipuri in strainatate
+					ACS Internships este o prezentare anuala, deschisa oricui este interesat, care
+					prezinta procesul de recrutare al companiilor din strainatate si ofera sfaturi
+					legate de scrierea CV-ului, diferitele tipuri de interviuri pe care le-ati
+					putea intampina si experientele studentilor de la diverse companii.
+				</p>
+				<p class="text-lg md:text-xl opacity-90 max-w-prose">
+					Prezentarea este organizata integral de studenti voluntari ai Facultatii de
+					Automatica si Calculatoare, din cadrul UNSTB, care
+					au obtinut internshipuri la companii precum Google, Meta, Amazon, Microsoft,
+					Bloomberg, Citadel si multe altele. Toate informatiile prezentate si
+					sfaturile oferite provin din experientele personale ale acestora.
 				</p>
 			</div>
 			<img src="static/multime.jpg" alt="Fosta editie ACS Internships"
@@ -82,67 +101,87 @@
 		</div>
 	</div>
 
-	<div class="w-full py-12 flex flex-col gap-8 bg-[#1f9495] shadow-lg">
+	<div id="schedule" class="-translate-y-16"></div>
+	<div class="section-padding flex flex-col gap-8 bg-[#1f9495] shadow-lg">
 		<h1 class="text-white text-center">Ce vei vedea?</h1>
-		<div
-			class="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-8 xl:gap-12 w-full max-w-responsive mx-auto">
+		<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 w-full max-w-responsive mx-auto">
 			<div class="card">
-				<div class="card-icon material-symbols-outlined">event</div>
+				<div class="card-icon material-symbols-outlined">description</div>
 				<div class="divider"></div>
 				<div class="card-text">
-					<p class="card-title">1. Cum arata sa iti faci un CV de top</p>
-					<p>Vom face un breakdown al tuturor tipurilor de interviu de care vei da pentur
-						a fi pregatit in viitor.</p>
+					<p class="card-title">1. Cum arata un CV care va iesi in evidenta?</p>
+					<p>
+						Vom explica cum ar trebui sa fie structurat un CV, ce aspecte ar trebui
+						evidentiate si ce urmareste un recruiter atunci cand iti citeste CV-ul.
+					</p>
 				</div>
 			</div>
 			<div class="card">
-				<div class="material-symbols-outlined card-icon">event</div>
+				<div class="material-symbols-outlined card-icon">mail</div>
 				<div class="divider"></div>
 				<div class="card-text">
-					<p class="card-title">2. Cum arata un interviu?</p>
-					<p>Vom face un breakdown al tuturor tipurilor de interviu de care vei da pentur
-						a fi pregatit in viitor.</p>
+					<p class="card-title">2. Cum aplici la aceste internshipuri?</p>
+					<p>
+						Un pas pe cat de simplu pe atat de important. Vom prezenta cum poti sa
+						aplici la internshipurile companiilor din strainatate si ce documente ar
+						trebui sa
+						pregatesti pentru acestea.
+					</p>
 				</div>
 			</div>
 			<div class="card">
-				<div class="material-symbols-outlined card-icon">event</div>
+				<div class="material-symbols-outlined card-icon">psychology</div>
 				<div class="divider"></div>
 				<div class="card-text">
-					<p class="card-title">2. Cum arata un interviu?</p>
-					<p>Vom face un breakdown al tuturor tipurilor de interviu de care vei da pentur
-						a fi pregatit in viitor.</p>
+					<p class="card-title">3. Cum arata un interviu si cum te poti pregati pentru el?
+					</p>
+					<p>
+						Vom prezenta diferitele tipuri de interviuri pe care le-ai putea
+						intalni, ce se urmareste in timpul acestora, precum si ce resurse ne-au
+						fost folositoare pentru a putea obtine oferte de la aceste companii.
+					</p>
 				</div>
 			</div>
 			<div class="card">
-				<div class="material-symbols-outlined card-icon">event</div>
+				<div class="material-symbols-outlined card-icon">apartment</div>
 				<div class="divider"></div>
 				<div class="card-text">
-					<p class="card-title">2. Cum arata un interviu?</p>
-					<p>Vom face un breakdown al tuturor tipurilor de interviu de care vei da pentur
-						a fi pregatit in viitor.</p>
+					<p class="card-title">4. Experientele studentilor</p>
+					<p>
+						Va vom prezenta cateva din companiile la care studentii automaticii au
+						mers pentru internshipuri, cat si procesul de recrutare al acestora, ce
+						pozitii ofera si experienta de a munci la ele.
+					</p>
 				</div>
 			</div>
 			<div class="card">
-				<div class="material-symbols-outlined card-icon">event</div>
+				<div class="material-symbols-outlined card-icon">help</div>
 				<div class="divider"></div>
 				<div class="card-text">
-					<p class="card-title">2. Cum arata un interviu?</p>
-					<p>Vom face un breakdown al tuturor tipurilor de interviu de care vei da pentur
-						a fi pregatit in viitor.</p>
+					<p class="card-title">5. Q&A</p>
+					<p>
+						Daca mai aveti orice fel de intrebari sau curiozitati despre
+						experientele noastre, va vom raspunde cu placere la finalul prezentarii.
+
+					</p>
 				</div>
 			</div>
 			<div class="card">
-				<div class="material-symbols-outlined card-icon">event</div>
+				<div class="material-symbols-outlined card-icon">groups</div>
 				<div class="divider"></div>
 				<div class="card-text">
-					<p class="card-title">2. Cum arata un interviu?</p>
-					<p>Vom face un breakdown al tuturor tipurilor de interviu de care vei da pentur
-						a fi pregatit in viitor.</p>
+					<p class="card-title">6. Comunitatea ACS Internships</p>
+					<p>
+						De asemenea, va invitam sa intrati pe serverul de discord ACS
+						Internships, unde puteti sa discutati cu noi si sa accesati resursele
+						pe care vi le punem la dispozitie.
+					</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<div id="resources" class="-translate-y-16"></div>
 	<div class="section-padding">
 		<div class="section-container">
 			<div class="section-text-container">
@@ -151,7 +190,7 @@
 					Am pregatit mai multe resurse pentru tine ...
 				</p>
 			</div>
-			<div class="border-[3px] border-[#166a6b] rounded-lg shadow-xl p-8 mx-auto">
+			<div class="w-full md:w-5/12 border-[3px] border-[#166a6b] rounded-lg shadow-xl p-8 mx-auto">
 				<h2 class="text-4xl md:text-5xl">Resurse Utile</h2>
 				<ul class="text-xl mt-4">
 					<li>Drive</li>
@@ -197,8 +236,18 @@
 			</div>
 			<div class="flex flex-col gap-2 md:items-end">
 				<h2>Contact</h2>
-				<span>email</span>
-				<span>discord</span>
+				<span class="flex items-center gap-2 md:flex-row-reverse">
+					<div class="material-symbols-outlined">mail</div>
+					<a href="mailto:acsinternships@gmail.com">
+						acsinternships@gmail.com
+					</a>
+				</span>
+				<span class="flex items-center gap-2 md:flex-row-reverse">
+					<img src="static/discord.svg" alt="">
+					<a href="https://discord.gg/sP3nWD974a" target="_blank">
+						Discord
+					</a>
+				</span>
 			</div>
 
 			<div class="md:col-span-3 mt-4 max-md:hidden">
@@ -215,6 +264,11 @@
 	function onToggleMenu() {
 		const navbar = document.getElementById("menu");
 		navbar.classList.toggle("expanded");
+	}
+
+	function onClickMenu() {
+		const navbar = document.getElementById("menu");
+		navbar.classList.remove("expanded");
 	}
 </script>
 

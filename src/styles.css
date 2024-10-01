@@ -6,6 +6,10 @@ html body {
   font-family: "Titillium Web", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html body h1,
 html body h2 {
   font-family: "Khand", sans-serif;
@@ -17,16 +21,19 @@ html body h2 {
 }
 
 .card {
-  @apply flex max-md:flex-col items-center p-3 gap-2;
+  @apply flex max-xl:flex-col items-center p-3 gap-4;
   @apply bg-white rounded-lg border border-gray-200 shadow-lg;
 }
 
 .card-icon {
-  @apply text-7xl md:text-6xl;
+  @apply text-8xl md:text-7xl rounded-lg flex justify-center items-center;
+  @apply max-xl:bg-[#1f9495] max-xl:text-white max-xl:opacity-60 max-xl:p-2 max-xl:w-full;
+  /* @apply text-[#0d4041]; */
 }
 
 .divider {
-  @apply w-2 bg-[#1f9495] h-full rounded-lg;
+  @apply min-w-1 bg-[#1f9495] h-full rounded-lg;
+  @apply max-xl:hidden;
 }
 
 .card-text {
@@ -34,8 +41,7 @@ html body h2 {
 }
 
 .card-title {
-  @apply text-xl md:text-2xl font-bold text-gray-800;
-  /* font-family: "Khand", sans-serif; */
+  @apply text-xl font-bold text-gray-800;
 }
 
 .nav-item {
